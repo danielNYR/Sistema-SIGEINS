@@ -1,0 +1,103 @@
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template/simple-sidebar)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+
+ #wrapper {
+    overflow-x: hidden;
+ }
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+  -webkit-box-shadow: 1px -2px 6px 3px rgba(194,194,194,0.36);
+-moz-box-shadow: 1px -2px 6px 3px rgba(194,194,194,0.36);
+box-shadow: 1px -2px 6px 3px rgba(194,194,194,0.36);
+
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+  
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+  
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+  
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+
+  .text-option{
+    margin-top: -10;
+  }
+
+  .card{
+    -webkit-box-shadow: 2px 6px 5px -1px rgba(194,194,194,0.85);
+-moz-box-shadow: 2px 6px 5px -1px rgba(194,194,194,0.85);
+box-shadow: 2px 6px 5px -1px rgba(194,194,194,0.85);
+  }
+  .card-header{
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: -4%;
+    border-radius: 1%;
+    color: white;
+    font-size: 22px;
+  }
+  .card-downgrade-primary{
+    background: linear-gradient(45deg,#007bff, #063061);
+  }
+  .card-downgrade-danger{
+    background: linear-gradient(45deg,#dc3545, #72030e);
+  }
+
+  .card-downgrade-info{
+    background: linear-gradient(45deg,#17a2b8, #076877);
+  }
+  .card-downgrade-success{
+    background: linear-gradient(45deg,#28a745, #17d13f);
+  }
+  .card-downgrade-warning{
+    background: linear-gradient(45deg,#ffc107, #fceb00);
+  }
+
+  .list-group-item:hover{
+    color: blue;
+  }
+
+  .boder-dotted{
+    border:#acacac 2px dashed;
+  }
+
+  .textarea{
+    resize: none;
+  }
+}
